@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../sttyles.css" />
+    <title>Dario Hernan Guaraz</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="./imagens.html">Imagenes</a>
+      <a href="./videos.html">Videos IFrame</a>
+      <a href="./estructuradoSemantico.html">Estructurado semantico</a>
+      <a class="aRepositorio" href="https://github.com/darioGuaraz/coderhouse"
+        >Ver repositorio</a
+      >
+    </nav>
+    <main class="mainSemantico">
+      <section id="inicio">
+        <h2>Introducción al desarrollo web</h2>
+        <p>
+          Esta estructura corresponde a una práctica introductoria donde se pone
+          en uso el lenguaje HTML junto a CSS. A través de este trabajo se busca
+          entender la importancia de estructurar correctamente el contenido
+          usando etiquetas semánticas, que permiten que el navegador, los
+          motores de búsqueda y las tecnologías de asistencia comprendan mejor
+          la información del sitio.
+        </p>
+      </section>
+      <hr />
+
+      <section id="nosotros">
+        <h2>Fundamentos de HTML</h2>
+
+        <article>
+          <h3>¿Qué es HTML y por qué es importante?</h3>
+          <p>
+            HTML (HyperText Markup Language) es el lenguaje que define la
+            estructura del contenido web. Usamos etiquetas como
+            <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> y
+            <code>&lt;aside&gt;</code> para dar un significado claro a cada
+            parte del sitio, facilitando la accesibilidad y el mantenimiento del
+            código.
+          </p>
+        </article>
+
+        <article>
+          <h3>Buenas prácticas en HTML</h3>
+          <p>
+            Una buena práctica en HTML es separar el contenido (HTML) de la
+            presentación (CSS). De esta manera, el código es más limpio,
+            escalable y fácil de leer. Además, utilizar nombres de clases
+            descriptivos y etiquetas correctas mejora la comprensión tanto para
+            otros desarrolladores como para los usuarios.
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section id="servicios">
+        <h2>Introducción a CSS</h2>
+
+        <article>
+          <h3>¿Qué es CSS y para qué se utiliza?</h3>
+          <p>
+            CSS (Cascading Style Sheets) es el lenguaje encargado del diseño y
+            la apariencia visual del sitio. Permite modificar colores,
+            tipografías, márgenes, ubicaciones y animaciones, logrando una
+            experiencia de usuario atractiva y coherente con la identidad del
+            proyecto.
+          </p>
+        </article>
+
+        <article>
+          <h3>Buenas prácticas en CSS</h3>
+          <p>
+            Algunas buenas prácticas en CSS incluyen el uso de selectores
+            claros, reutilización de clases, organización del código en
+            secciones y el uso de propiedades como <code>flex</code> o
+            <code>grid</code> para lograr diseños responsivos adaptables a
+            distintos dispositivos.
+          </p>
+        </article>
+
+        <ul>
+          <li>Diseño adaptado a múltiples dispositivos (responsivo)</li>
+          <li>Separación de estructura y estilo</li>
+          <li>Código accesible, ordenado y escalable</li>
+        </ul>
+      </section>
+      <hr />
+
+      <section id="contacto">
+        <h2>Formulario y accesibilidad</h2>
+        <form>
+          <label for="mensaje">Mensaje:</label>
+          <input
+            type="text"
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escribí tu mensaje aquí"
+          />
+          <button type="submit">Enviar</button>
+        </form>
+        <p>
+          El formulario permite al usuario enviar datos a través de entradas
+          como <code>input</code> o <code>textarea</code>. Es esencial acompañar
+          estos elementos con etiquetas <code>label</code> asociadas, ya que
+          mejora la accesibilidad y la usabilidad del sitio.
+        </p>
+      </section>
+
+      <aside>
+        <h2>Contenido complementario</h2>
+        <p>
+          El elemento <code>&lt;aside&gt;</code> se utiliza para contenido
+          complementario al principal, como noticias, enlaces, anuncios o
+          recursos externos. Aunque no es el foco principal del sitio, mejora el
+          contexto general y la navegación del usuario.
+        </p>
+      </aside>
+      <hr />
+
+      <a class="aNolose" href="./nolose.html">
+        Ver notas y opiniones de los profesores
+      </a>
+    </main>
+
+    <footer>Alumno: Dario Hernan Guaraz - 1er Entrega</footer>
+  </body>
+</html>
