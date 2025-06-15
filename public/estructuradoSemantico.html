@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../sttyles.css" />
-    <title>Dario Hernan Guaraz</title>
+    <title>Dario Hernán Guaraz</title>
   </head>
   <body>
     <nav class="nav">
-      <a href="../index.html">Home</a>
-      <a href="./imagens.html">Imagenes</a>
-      <a href="./videos.html">Videos IFrame</a>
-      <a href="./estructuradoSemantico.html">Estructurado semantico</a>
+      <a href="../index.html">Inicio</a>
+      <a href="./videos.html">Videos</a>
+      <a href="./imagens.html">Imágenes</a>
+      <a href="./estructuradoSemantico.html">Capacitación</a>
       <a
         class="aRepositorio"
         href="https://github.com/darioGuaraz/FullstackCoder"
         >Ver repositorio</a
       >
     </nav>
+
     <main class="mainSemantico">
       <section id="inicio">
         <h2>Introducción al desarrollo web</h2>
@@ -28,6 +29,19 @@
           usando etiquetas semánticas, que permiten que el navegador, los
           motores de búsqueda y las tecnologías de asistencia comprendan mejor
           la información del sitio.
+        </p>
+        <p>
+          Para comenzar a aprender HTML es fundamental conocer las etiquetas más
+          comunes, su función y cómo organizarlas de forma coherente. Todo
+          documento HTML inicia con <code>&lt;!DOCTYPE html&gt;</code>, seguido
+          por la estructura básica: <code>&lt;html&gt;</code>, dentro de la cual
+          se colocan las secciones <code>&lt;head&gt;</code> (encabezado del
+          documento) y <code>&lt;body&gt;</code> (contenido visible).
+        </p>
+        <p>
+          A lo largo del documento, se utilizan etiquetas semánticas que ayudan
+          a darle sentido a cada bloque. A continuación, explicaremos algunas de
+          las más importantes.
         </p>
       </section>
       <hr />
@@ -40,11 +54,36 @@
           <p>
             HTML (HyperText Markup Language) es el lenguaje que define la
             estructura del contenido web. Usamos etiquetas como
-            <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> y
-            <code>&lt;aside&gt;</code> para dar un significado claro a cada
-            parte del sitio, facilitando la accesibilidad y el mantenimiento del
-            código.
+            <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+            <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> y
+            <code>&lt;nav&gt;</code> para dar un significado claro a cada parte
+            del sitio, facilitando la accesibilidad, el mantenimiento del código
+            y el posicionamiento en buscadores (SEO).
           </p>
+        </article>
+
+        <article>
+          <h3>¿Para qué sirven las etiquetas semánticas?</h3>
+          <p>
+            Las etiquetas semánticas indican qué tipo de contenido contienen.
+            Por ejemplo:
+          </p>
+          <ul>
+            <li>
+              <code>&lt;header&gt;</code>: Encabezado del sitio o sección.
+            </li>
+            <li><code>&lt;nav&gt;</code>: Barra de navegación.</li>
+            <li><code>&lt;main&gt;</code>: Contenido principal del sitio.</li>
+            <li>
+              <code>&lt;section&gt;</code>: Sección temática de contenido.
+            </li>
+            <li>
+              <code>&lt;article&gt;</code>: Contenido independiente o
+              autoexplicativo.
+            </li>
+            <li><code>&lt;aside&gt;</code>: Contenido complementario.</li>
+            <li><code>&lt;footer&gt;</code>: Pie de página.</li>
+          </ul>
         </article>
 
         <article>
@@ -90,6 +129,12 @@
           <li>Separación de estructura y estilo</li>
           <li>Código accesible, ordenado y escalable</li>
         </ul>
+
+        <p>
+          <strong>Aclaración:</strong> el diseño actual no es responsive. Se
+          recomienda visualizar el sitio en computadoras de escritorio para una
+          mejor experiencia.
+        </p>
       </section>
       <hr />
 
@@ -109,7 +154,9 @@
           El formulario permite al usuario enviar datos a través de entradas
           como <code>input</code> o <code>textarea</code>. Es esencial acompañar
           estos elementos con etiquetas <code>label</code> asociadas, ya que
-          mejora la accesibilidad y la usabilidad del sitio.
+          mejora la accesibilidad y la usabilidad del sitio. También se pueden
+          añadir atributos como <code>placeholder</code>, <code>required</code>
+          o validaciones para mejorar la interacción.
         </p>
       </section>
 
@@ -121,6 +168,13 @@
           recursos externos. Aunque no es el foco principal del sitio, mejora el
           contexto general y la navegación del usuario.
         </p>
+        <p>
+          Aprender HTML paso a paso implica entender para qué sirve cada una de
+          estas etiquetas, cómo estructurar la información y cómo combinarlo con
+          CSS para lograr sitios más atractivos y funcionales. Lo ideal es
+          practicar con ejemplos reales, como este, donde se pone en uso cada
+          parte de una página web.
+        </p>
       </aside>
       <hr />
 
@@ -129,6 +183,6 @@
       </a>
     </main>
 
-    <footer>Alumno: Dario Hernan Guaraz - 1er Entrega</footer>
+    <footer>Alumno: Dario Hernán Guaraz - 1.ª Entrega</footer>
   </body>
 </html>
