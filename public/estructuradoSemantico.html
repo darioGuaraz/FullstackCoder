@@ -3,186 +3,243 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../sttyles.css" />
+    <!--BOOSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles.css" />
     <title>Dario Hernán Guaraz</title>
   </head>
   <body>
-    <nav class="nav">
-      <a href="../index.html">Inicio</a>
-      <a href="./videos.html">Videos</a>
-      <a href="./imagens.html">Imágenes</a>
-      <a href="./estructuradoSemantico.html">Capacitación</a>
-      <a
-        class="aRepositorio"
-        href="https://github.com/darioGuaraz/FullstackCoder"
-        >Ver repositorio</a
-      >
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="../index.html"
+          style="
+            background-color: rgba(41, 41, 40, 0.959);
+            padding-inline: 20px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            color: rgb(210, 231, 16);
+          "
+          >Inicio</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./videos.html"
+                >Videos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./imagens.html">Memes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./estructuradoSemantico.html"
+                >Tutoriales</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/darioGuaraz/FullstackCoder"
+                target="_blank"
+                >Ver Repositorio</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <header class="headerSemantico">
+      <img src="../src/img/bannerSemantico.png" alt="" />
+    </header>
 
     <main class="mainSemantico">
-      <section id="inicio">
-        <h2>Introducción al desarrollo web</h2>
-        <p>
-          Esta estructura corresponde a una práctica introductoria donde se pone
-          en uso el lenguaje HTML junto a CSS. A través de este trabajo se busca
-          entender la importancia de estructurar correctamente el contenido
-          usando etiquetas semánticas, que permiten que el navegador, los
-          motores de búsqueda y las tecnologías de asistencia comprendan mejor
-          la información del sitio.
-        </p>
-        <p>
-          Para comenzar a aprender HTML es fundamental conocer las etiquetas más
-          comunes, su función y cómo organizarlas de forma coherente. Todo
-          documento HTML inicia con <code>&lt;!DOCTYPE html&gt;</code>, seguido
-          por la estructura básica: <code>&lt;html&gt;</code>, dentro de la cual
-          se colocan las secciones <code>&lt;head&gt;</code> (encabezado del
-          documento) y <code>&lt;body&gt;</code> (contenido visible).
-        </p>
-        <p>
-          A lo largo del documento, se utilizan etiquetas semánticas que ayudan
-          a darle sentido a cada bloque. A continuación, explicaremos algunas de
-          las más importantes.
-        </p>
-      </section>
-      <hr />
-
-      <section id="nosotros">
-        <h2>Fundamentos de HTML</h2>
-
-        <article>
-          <h3>¿Qué es HTML y por qué es importante?</h3>
+      <h1>:Contendio Biblografico:</h1>
+      <div class="hijoMainSemantico">
+        <section id="inicio">
           <p>
-            HTML (HyperText Markup Language) es el lenguaje que define la
-            estructura del contenido web. Usamos etiquetas como
-            <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
-            <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> y
-            <code>&lt;nav&gt;</code> para dar un significado claro a cada parte
-            del sitio, facilitando la accesibilidad, el mantenimiento del código
-            y el posicionamiento en buscadores (SEO).
+            Esta estructura corresponde a una práctica introductoria donde se
+            pone en uso el lenguaje HTML junto a CSS. A través de este trabajo
+            se busca entender la importancia de estructurar correctamente el
+            contenido usando etiquetas semánticas, que permiten que el
+            navegador, los motores de búsqueda y las tecnologías de asistencia
+            comprendan mejor la información del sitio.
           </p>
-        </article>
-
-        <article>
-          <h3>¿Para qué sirven las etiquetas semánticas?</h3>
           <p>
-            Las etiquetas semánticas indican qué tipo de contenido contienen.
-            Por ejemplo:
+            Para comenzar a aprender HTML es fundamental conocer las etiquetas
+            más comunes, su función y cómo organizarlas de forma coherente. Todo
+            documento HTML inicia con <code>&lt;!DOCTYPE html&gt;</code>,
+            seguido por la estructura básica: <code>&lt;html&gt;</code>, dentro
+            de la cual se colocan las secciones
+            <code>&lt;head&gt;</code> (encabezado del documento) y
+            <code>&lt;body&gt;</code> (contenido visible).
           </p>
+          <p>
+            A lo largo del documento, se utilizan etiquetas semánticas que
+            ayudan a darle sentido a cada bloque. A continuación, explicaremos
+            algunas de las más importantes.
+          </p>
+        </section>
+        <hr />
+
+        <section id="nosotros">
+          <h2>Fundamentos de HTML</h2>
+
+          <article>
+            <h3>¿Qué es HTML y por qué es importante?</h3>
+            <p>
+              HTML (HyperText Markup Language) es el lenguaje que define la
+              estructura del contenido web. Usamos etiquetas como
+              <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+              <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> y
+              <code>&lt;nav&gt;</code> para dar un significado claro a cada
+              parte del sitio, facilitando la accesibilidad, el mantenimiento
+              del código y el posicionamiento en buscadores (SEO).
+            </p>
+          </article>
+
+          <article>
+            <h3>¿Para qué sirven las etiquetas semánticas?</h3>
+            <p>
+              Las etiquetas semánticas indican qué tipo de contenido contienen.
+              Por ejemplo:
+            </p>
+            <ul>
+              <li>
+                <code>&lt;header&gt;</code>: Encabezado del sitio o sección.
+              </li>
+              <li><code>&lt;nav&gt;</code>: Barra de navegación.</li>
+              <li><code>&lt;main&gt;</code>: Contenido principal del sitio.</li>
+              <li>
+                <code>&lt;section&gt;</code>: Sección temática de contenido.
+              </li>
+              <li>
+                <code>&lt;article&gt;</code>: Contenido independiente o
+                autoexplicativo.
+              </li>
+              <li><code>&lt;aside&gt;</code>: Contenido complementario.</li>
+              <li><code>&lt;footer&gt;</code>: Pie de página.</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Buenas prácticas en HTML</h3>
+            <p>
+              Una buena práctica en HTML es separar el contenido (HTML) de la
+              presentación (CSS). De esta manera, el código es más limpio,
+              escalable y fácil de leer. Además, utilizar nombres de clases
+              descriptivos y etiquetas correctas mejora la comprensión tanto
+              para otros desarrolladores como para los usuarios.
+            </p>
+          </article>
+        </section>
+        <hr />
+
+        <section id="servicios">
+          <h2>Introducción a CSS</h2>
+
+          <article>
+            <h3>¿Qué es CSS y para qué se utiliza?</h3>
+            <p>
+              CSS (Cascading Style Sheets) es el lenguaje encargado del diseño y
+              la apariencia visual del sitio. Permite modificar colores,
+              tipografías, márgenes, ubicaciones y animaciones, logrando una
+              experiencia de usuario atractiva y coherente con la identidad del
+              proyecto.
+            </p>
+          </article>
+
+          <article>
+            <h3>Buenas prácticas en CSS</h3>
+            <p>
+              Algunas buenas prácticas en CSS incluyen el uso de selectores
+              claros, reutilización de clases, organización del código en
+              secciones y el uso de propiedades como <code>flex</code> o
+              <code>grid</code> para lograr diseños responsivos adaptables a
+              distintos dispositivos.
+            </p>
+          </article>
+
           <ul>
-            <li>
-              <code>&lt;header&gt;</code>: Encabezado del sitio o sección.
-            </li>
-            <li><code>&lt;nav&gt;</code>: Barra de navegación.</li>
-            <li><code>&lt;main&gt;</code>: Contenido principal del sitio.</li>
-            <li>
-              <code>&lt;section&gt;</code>: Sección temática de contenido.
-            </li>
-            <li>
-              <code>&lt;article&gt;</code>: Contenido independiente o
-              autoexplicativo.
-            </li>
-            <li><code>&lt;aside&gt;</code>: Contenido complementario.</li>
-            <li><code>&lt;footer&gt;</code>: Pie de página.</li>
+            <li>Diseño adaptado a múltiples dispositivos (responsivo)</li>
+            <li>Separación de estructura y estilo</li>
+            <li>Código accesible, ordenado y escalable</li>
           </ul>
-        </article>
+        </section>
+        <hr />
 
-        <article>
-          <h3>Buenas prácticas en HTML</h3>
+        <section id="contacto">
+          <h2>Formulario y accesibilidad</h2>
+          <form>
+            <label for="mensaje">Mensaje:</label>
+            <input
+              type="text"
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribí tu mensaje aquí"
+            />
+            <button type="submit">Enviar</button>
+          </form>
           <p>
-            Una buena práctica en HTML es separar el contenido (HTML) de la
-            presentación (CSS). De esta manera, el código es más limpio,
-            escalable y fácil de leer. Además, utilizar nombres de clases
-            descriptivos y etiquetas correctas mejora la comprensión tanto para
-            otros desarrolladores como para los usuarios.
+            El formulario permite al usuario enviar datos a través de entradas
+            como <code>input</code> o <code>textarea</code>. Es esencial
+            acompañar estos elementos con etiquetas
+            <code>label</code> asociadas, ya que mejora la accesibilidad y la
+            usabilidad del sitio. También se pueden añadir atributos como
+            <code>placeholder</code>, <code>required</code>
+            o validaciones para mejorar la interacción.
           </p>
-        </article>
-      </section>
-      <hr />
+        </section>
 
-      <section id="servicios">
-        <h2>Introducción a CSS</h2>
-
-        <article>
-          <h3>¿Qué es CSS y para qué se utiliza?</h3>
+        <aside>
+          <h2>Contenido complementario</h2>
           <p>
-            CSS (Cascading Style Sheets) es el lenguaje encargado del diseño y
-            la apariencia visual del sitio. Permite modificar colores,
-            tipografías, márgenes, ubicaciones y animaciones, logrando una
-            experiencia de usuario atractiva y coherente con la identidad del
-            proyecto.
+            El elemento <code>&lt;aside&gt;</code> se utiliza para contenido
+            complementario al principal, como noticias, enlaces, anuncios o
+            recursos externos. Aunque no es el foco principal del sitio, mejora
+            el contexto general y la navegación del usuario.
           </p>
-        </article>
-
-        <article>
-          <h3>Buenas prácticas en CSS</h3>
           <p>
-            Algunas buenas prácticas en CSS incluyen el uso de selectores
-            claros, reutilización de clases, organización del código en
-            secciones y el uso de propiedades como <code>flex</code> o
-            <code>grid</code> para lograr diseños responsivos adaptables a
-            distintos dispositivos.
+            Aprender HTML paso a paso implica entender para qué sirve cada una
+            de estas etiquetas, cómo estructurar la información y cómo
+            combinarlo con CSS para lograr sitios más atractivos y funcionales.
+            Lo ideal es practicar con ejemplos reales, como este, donde se pone
+            en uso cada parte de una página web.
           </p>
-        </article>
-
-        <ul>
-          <li>Diseño adaptado a múltiples dispositivos (responsivo)</li>
-          <li>Separación de estructura y estilo</li>
-          <li>Código accesible, ordenado y escalable</li>
-        </ul>
-
-        <p>
-          <strong>Aclaración:</strong> el diseño actual no es responsive. Se
-          recomienda visualizar el sitio en computadoras de escritorio para una
-          mejor experiencia.
-        </p>
-      </section>
-      <hr />
-
-      <section id="contacto">
-        <h2>Formulario y accesibilidad</h2>
-        <form>
-          <label for="mensaje">Mensaje:</label>
-          <input
-            type="text"
-            id="mensaje"
-            name="mensaje"
-            placeholder="Escribí tu mensaje aquí"
-          />
-          <button type="submit">Enviar</button>
-        </form>
-        <p>
-          El formulario permite al usuario enviar datos a través de entradas
-          como <code>input</code> o <code>textarea</code>. Es esencial acompañar
-          estos elementos con etiquetas <code>label</code> asociadas, ya que
-          mejora la accesibilidad y la usabilidad del sitio. También se pueden
-          añadir atributos como <code>placeholder</code>, <code>required</code>
-          o validaciones para mejorar la interacción.
-        </p>
-      </section>
-
-      <aside>
-        <h2>Contenido complementario</h2>
-        <p>
-          El elemento <code>&lt;aside&gt;</code> se utiliza para contenido
-          complementario al principal, como noticias, enlaces, anuncios o
-          recursos externos. Aunque no es el foco principal del sitio, mejora el
-          contexto general y la navegación del usuario.
-        </p>
-        <p>
-          Aprender HTML paso a paso implica entender para qué sirve cada una de
-          estas etiquetas, cómo estructurar la información y cómo combinarlo con
-          CSS para lograr sitios más atractivos y funcionales. Lo ideal es
-          practicar con ejemplos reales, como este, donde se pone en uso cada
-          parte de una página web.
-        </p>
-      </aside>
-      <hr />
-
-      <a class="aNolose" href="./nolose.html">
-        Ver notas y opiniones de los profesores
-      </a>
+        </aside>
+        <hr />
+      </div>
     </main>
 
-    <footer>Alumno: Dario Hernán Guaraz - 1.ª Entrega</footer>
+    <footer>
+      <h3 style="font-size: 25px; color: rgba(14, 13, 13, 0.801)">
+        Programado por Dario Hernan Guaraz
+      </h3>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

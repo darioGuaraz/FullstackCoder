@@ -4,38 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./main.js"></script>
-    <link rel="stylesheet" href="./sttyles.css" />
+    <!--BOOSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
     <title>Dario Hernán Guaraz</title>
   </head>
   <body>
-    <nav class="nav">
-      <a href="./index.html">Inicio</a>
-      <a href="./public/videos.html">Videos</a>
-      <a href="./public/imagens.html">Imágenes</a>
-      <a href="./public/estructuradoSemantico.html">Capacitación</a>
-      <a
-        class="aRepositorio"
-        href="https://github.com/darioGuaraz/FullstackCoder"
-        >Ver repositorio</a
-      >
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="./index.html"
+          style="
+            background-color: rgba(41, 41, 40, 0.959);
+            padding-inline: 20px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+            color: rgb(210, 231, 16);
+          "
+          >Inicio</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./public/videos.html"
+                >Videos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./public/imagens.html">Memes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./public/estructuradoSemantico.html"
+                >Tutoriales</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/darioGuaraz/FullstackCoder"
+                target="_blank"
+                >Ver Repositorio</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+
     <div class="container">
       <div class="containerImg">
         <img class="imgDario" src="./src/img/img-removebg-preview.png" alt="" />
       </div>
       <div class="titulos">
         <img src="./src/img/logocoder.png" alt="" />
-        <h1>1.ª Entrega - Dario Hernán Guaraz</h1>
+        <h1>2.ª Entrega - Dario Hernán Guaraz</h1>
         <p>
-          En esta primera entrega se desarrolló una estructura web utilizando
-          HTML y hojas de estilo en CSS. El sitio cuenta con una barra de
-          navegación que permite recorrer las distintas secciones de forma
-          ordenada y clara. Se aplicaron conceptos fundamentales de maquetado y
-          diseño para lograr una presentación visual coherente y funcional.
+          Para esta instancia académica, decidí desarrollar un sitio web con
+          fines educativos, orientado a la presentación de cursos y tutoriales
+          relacionados con la programación. El objetivo principal es ofrecer una
+          experiencia clara y accesible para los usuarios, combinando contenido
+          técnico con un diseño funcional y completamente responsivo, adaptable
+          a distintos dispositivos. Esta elección busca integrar los
+          conocimientos teóricos y prácticos adquiridos a lo largo del curso en
+          un proyecto concreto y aplicable.
         </p>
       </div>
     </div>
 
-    <footer>Alumno: Dario Hernán Guaraz - 1.ª Entrega</footer>
+    <footer>
+      <h3 style="font-size: 25px; color: rgba(14, 13, 13, 0.801)">
+        Programado por Dario Hernan Guaraz
+      </h3>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
