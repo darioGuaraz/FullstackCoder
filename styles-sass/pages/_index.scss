@@ -8,7 +8,7 @@
 // @import 'mixins';
 // @import 'extends';
 body {
-  background-image: url("../src/img/fondo2.avif");
+  background-image: $background-image;
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
