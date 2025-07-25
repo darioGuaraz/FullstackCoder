@@ -1,0 +1,181 @@
+@use "../variables/variables" as *;
+@use "../variables/mixins" as *;
+@use "../variables/extends" as *;
+@use "../variables/fonts" as *;
+
+// The following lines are to be removed if they exist:
+// @use 'variables';
+// @import 'mixins';
+// @import 'extends';
+body {
+  background-image: url("../src/img/fondo2.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0;
+}
+
+nav .container-fluid {
+  background-color: $color-principal;
+  margin-top: 0;
+  font-family: $font-principal;
+  font-size: $font-size-base;
+  padding: $padding-base;
+  a {
+    margin-left: 30px;
+    color: $color-amarillo;
+  }
+}
+
+.container {
+  margin-top: $margin-base;
+  margin-bottom: $margin-base;
+  padding-left: 0;
+
+  border-radius: $border-radius-xl;
+  width: 100%;
+
+  display: flex;
+  text-align: center;
+}
+
+.containerImg {
+  flex: 50%;
+  padding: 0;
+  margin: 0;
+  .imgDario {
+    border-radius: $border-radius-xl;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.titulos {
+  display: block;
+  flex: 50%;
+  margin-left: 20px;
+
+  padding: $padding-base;
+  img {
+    width: 100%;
+    margin-top: 0;
+  }
+  .hijo-titulos {
+    padding: $padding-base;
+  }
+}
+
+h1 {
+  @extend %titulo-base;
+  font-size: $font-size-h1;
+  font-style: italic;
+}
+h2 {
+  @extend %titulo-base;
+  font-size: $font-size-h2;
+}
+h3 {
+  font-family: $font-monospace;
+  font-weight: 100;
+  color: $color-amarillo;
+  font-size: $font-size-h3;
+}
+
+footer {
+  @extend %footer-base;
+  h2 {
+    font-size: 36px;
+    font-weight: 100;
+  }
+}
+
+.p-index {
+  color: $color-p;
+  font-family: $font-p;
+  font-weight: 100;
+  font-size: $font-size-p;
+  background-color: rgba(0, 0, 0, 0.726);
+  border-radius: $border-radius-xl;
+  padding: $padding-base;
+}
+
+// Media queries INDEX
+@include tablet {
+  nav .container-fluid {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .containerImg {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 80%;
+    }
+  }
+
+  .titulos {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    img {
+      background-color: $color-main-semantico;
+      border-radius: $border-radius-xl;
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  .titulos p {
+    padding: $padding-titulos-p;
+  }
+}
+
+@include mobile {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .containerImg {
+    width: 100%;
+    text-align: center;
+  }
+  .containerImg img {
+    width: 80%;
+  }
+  .titulos {
+    margin: 0;
+  }
+  .titulos img {
+    margin-top: 0;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .titulos p {
+    padding: $padding-titulos-p;
+  }
+}

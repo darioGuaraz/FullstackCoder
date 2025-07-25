@@ -1,0 +1,22 @@
+@use "../variables/variables" as *;
+@use "../variables/mixins" as *;
+
+.containerMemes {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  justify-content: space-between;
+  margin: $margin-container-memes;
+}
+.containerMemes img {
+  width: 400px;
+  height: 100%;
+  margin: 2%;
+  border-radius: $border-radius-base;
+}
+#perroCortar {
+  height: 500px;
+}
+#nigaCortar {
+  height: 400px;
+}

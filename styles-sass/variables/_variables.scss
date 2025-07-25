@@ -1,0 +1,56 @@
+// Variables globales de colores, fuentes y tamaños
+// Usar solo para valores reutilizados frecuentemente
+
+$color-principal: #8818b4;
+$color-secundario: #3396bd;
+$color-negro: #000000;
+$color-amarillo: rgb(217, 231, 16);
+$color-footer-bg: linear-gradient(
+  to right,
+  #3d114e 0%,
+
+  $color-principal 50%,
+
+  #3d114e 100%
+);
+$color-titulos-bg: #e8ff3c;
+$color-header-semantico: #2d2d2f;
+$color-main-semantico: rgb(14, 13, 13);
+$color-main-semantico-alt: #2c2828;
+$color-hijo-main-semantico: rgb(68, 68, 68);
+$color-form-bg: aliceblue;
+$color-p: aliceblue;
+$color-intro-bg: #f8f8f827;
+
+$font-principal: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+$font-titulos: fantasy;
+$font-monospace: monospace;
+$font-p: Arial, Helvetica, sans-serif;
+
+$font-size-base: 20px;
+$font-size-h1: 4rem;
+$font-size-h2: 3rem;
+$font-size-h3: 2rem;
+$font-size-p: 22px;
+
+$border-radius-base: 10px;
+$border-radius-xl: 20px;
+
+$padding-base: 10px;
+$padding-xl: 40px;
+$padding-footer: 4px;
+$padding-titulos-p: 20px;
+
+$margin-base: 20px;
+
+$margin-titulos: 8%;
+$margin-container-memes: 20px;
+$margin-container-videos: 10%;
+$margin-container-videos-mobile: 2%;
+
+$background-image: url("../../src/img/fondo2.avif");
+
+// Breakpoints
+$breakpoint-tablet-min: 576px;
+$breakpoint-tablet-max: 991.98px;
+$breakpoint-mobile-max: 575.98px;

@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Sass Watch: styles-sass/main.scss -> styles.css",
+      "command": "npx sass --watch styles-sass/main.scss:styles.css",
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

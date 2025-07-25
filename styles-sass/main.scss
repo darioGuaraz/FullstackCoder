@@ -1,0 +1,9 @@
+// Archivo principal de SASS
+// Importa todos los parciales y variables
+@use "./variables/variables" as *;
+@use "./variables/mixins" as *;
+@use "./variables/extends" as *;
+@use "./pages/index" as *;
+@use "./pages/memes" as *;
+@use "./pages/videos" as *;
+@use "./pages/estructuradoSemantico" as *;

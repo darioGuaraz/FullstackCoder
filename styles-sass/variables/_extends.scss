@@ -1,0 +1,19 @@
+// Extends para títulos
+// Evita repeticiones en h1, h2, h3
+@use "../variables/variables" as *;
+
+%titulo-base {
+  font-style: italic;
+  font-family: $font-titulos;
+  font-weight: 100;
+  color: $color-amarillo;
+  text-align: center;
+}
+
+%footer-base {
+  text-align: center;
+  font-family: $font-principal;
+  padding: $padding-base;
+  background: $color-footer-bg;
+  margin-top: 20px;
+}
