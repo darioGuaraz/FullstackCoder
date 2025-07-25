@@ -62,6 +62,13 @@ li {
 }
 // Media queries Estructurado Semantico
 @include tablet {
+  .headerSemantico {
+    text-align: center;
+    img {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
   main.mainSemantico {
     background-color: $color-main-semantico-alt;
   }
@@ -75,6 +82,13 @@ li {
   }
 }
 @include mobile {
+  .headerSemantico {
+    text-align: center;
+    img {
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
   .mainSemantico {
     margin: 0;
     padding: 0;
