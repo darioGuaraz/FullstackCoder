@@ -48,7 +48,12 @@ $margin-container-memes: 20px;
 $margin-container-videos: 10%;
 $margin-container-videos-mobile: 2%;
 
-$background-image: url("../../src/img/fondo2.avif");
+// Base path para imágenes
+$base-path: "/FullstackCoder";
+
+// Variables para backgrounds
+$background-image: url("#{$base-path}/img/fondo2.avif");
+$background-image-semantico: url("#{$base-path}/img/header-semantico.jpg");
 
 $animacion-hover: true;
 

@@ -11,3 +11,10 @@
     }
   ]
 }
+
+/*Para que funcione tanto en local como en GitHub Pages, puedes:
+Definir una variable de entorno en _variables.scss:
+
+
+$base-path: "/FullstackCoder";  // Para GitHub Pages
+// $base-path: "";              // Para desarrollo local*/
