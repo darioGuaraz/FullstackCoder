@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Fira+Mono:wght@400;700&family=Roboto:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Handjet:wght@100..900&display=swap");
-h1, h2 {
+h1,
+h2 {
   font-style: italic;
   font-family: fantasy;
   font-weight: 100;
@@ -28,7 +29,7 @@ h1 {
 }
 
 body {
-  background-image: url("/img/fondo2.avif");
+  background-image: url("./img/fondo2.avif");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -264,7 +265,7 @@ iframe:hover {
 .headerSemantico {
   width: 100%;
   max-width: 100%;
-  background-image: url("/img/header-semantico.jpg");
+  background-image: url("./img/header-semantico.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
