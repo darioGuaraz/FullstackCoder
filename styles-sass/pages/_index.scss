@@ -38,9 +38,9 @@ nav .container-fluid {
     margin-left: 30px;
     color: $color-amarillo;
     @if $animacion-hover {
-      transition: transform 0.9s ease;
+      transition: transform 1s ease;
       &:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
         color: $color-secundario;
       }
     }
@@ -126,13 +126,15 @@ footer {
   font-family: $font-p;
   font-weight: 100;
   font-size: $font-size-p;
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: #bb5a81a1;
+  box-shadow: 14px 14px 8px rgba(0, 0, 0, 0.5);
   border-radius: $border-radius-xl;
   padding: $padding-base;
   @if $animacion-hover {
-    transition: transform 1.2s ease;
+    transition: transform 9.2s ease, color 9s ease;
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
+      color: $color-amarillo;
     }
   }
 }
@@ -177,6 +179,7 @@ footer {
   }
   .titulos p {
     padding: $padding-titulos-p;
+    font-size: 35px;
   }
 }
 

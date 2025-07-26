@@ -16,8 +16,7 @@ footer {
 }
 
 a,
-h3,
-p {
+h3 {
   font-family: Handjet !important;
   font-size: 24px !important;
   font-weight: 500 !important;
@@ -27,8 +26,13 @@ h1 {
   font-family: Anton SC;
   font-weight: 400;
   font-style: normal !important;
+  text-shadow: 14px 14px 8px rgba(0, 0, 0, 0.5);
   font-style: normal;
   font-size: 50px !important;
+}
+
+p {
+  font-family: inter;
 }
 
 body {
@@ -63,10 +67,10 @@ nav .container-fluid {
 nav .container-fluid a {
   margin-left: 30px;
   color: rgb(217, 231, 16);
-  transition: transform 0.9s ease;
+  transition: transform 1s ease;
 }
 nav .container-fluid a:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
   color: #3396bd;
 }
 
@@ -139,13 +143,15 @@ footer h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 22px;
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: rgba(187, 90, 129, 0.631372549);
+  box-shadow: 14px 14px 8px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   padding: 10px;
-  transition: transform 1.2s ease;
+  transition: transform 9.2s ease, color 9s ease;
 }
 .p-index:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  color: rgb(217, 231, 16);
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
@@ -185,6 +191,7 @@ footer h2 {
   }
   .titulos p {
     padding: 20px;
+    font-size: 35px;
   }
 }
 @media (max-width: 575.98px) {
@@ -291,7 +298,6 @@ iframe:hover {
 }
 .headerSemantico {
   width: 100%;
-  max-width: 100%;
   background-image: url("/img/header-semantico.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -304,29 +310,22 @@ iframe:hover {
 }
 
 .mainSemantico {
-  margin-bottom: 0;
-  padding-top: 50px;
-  text-align: center;
-  justify-content: center;
   width: 100%;
-  max-width: 100%;
-  height: 100%;
+  margin: 0;
+  padding: 50px 0 10px 0;
+  text-align: center;
   background-image: url("../../img/fondo2.avif");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 10px;
 }
 
 .hijoMainSemantico {
+  width: 90%;
   margin: 0 auto;
-  padding: 40px;
-  max-width: 100%;
-  justify-content: center;
-  text-align: center;
+  padding: 2rem;
   background-color: rgb(68, 68, 68);
   border-radius: 20px;
-  width: 80%;
-  height: 100%;
+  box-sizing: border-box;
 }
 
 ul {
@@ -337,12 +336,12 @@ ul {
 }
 
 form {
-  padding-top: 10px;
+  padding: 1rem;
   border-radius: 20px;
   background-color: aliceblue;
-  margin-left: 20%;
-  margin-right: 20%;
-  height: 90px;
+  width: 60%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 p {
@@ -353,24 +352,35 @@ li {
   color: #3396bd;
 }
 
+.ejemplo-html code {
+  font-size: 24px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
 @media (min-width: 576px) and (max-width: 991.98px) {
   .headerSemantico {
     text-align: center;
   }
   .headerSemantico img {
     width: 100%;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
   }
-  main.mainSemantico {
+  .mainSemantico {
     background-color: #2c2828;
+    padding: 1rem;
   }
   .hijoMainSemantico {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    max-width: 100%;
+    padding: 1rem;
     background-color: #2c2828;
     border-radius: 0;
+  }
+  .hijoMainSemantico p {
+    padding: 20px;
+    font-size: 28px !important;
+  }
+  form {
+    width: 90%;
   }
 }
 @media (max-width: 575.98px) {
@@ -379,18 +389,26 @@ li {
   }
   .headerSemantico img {
     width: 100%;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
   }
   .mainSemantico {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
   }
   .hijoMainSemantico {
-    margin: 0;
     width: 100%;
-    max-width: 100%;
+    padding: 1rem;
     background-color: #2c2828;
     border-radius: 0;
+  }
+  .hijoMainSemantico #contacto form {
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  form {
+    width: 100%;
   }
 }
 

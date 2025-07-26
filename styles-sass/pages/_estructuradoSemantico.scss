@@ -3,12 +3,12 @@
 
 .headerSemantico {
   width: 100%;
-  max-width: 100%;
   background-image: url("/img/header-semantico.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   text-align: end;
+
   img {
     width: 40%;
     margin-right: 15%;
@@ -16,88 +16,120 @@
 }
 
 .mainSemantico {
-  margin-bottom: 0;
-  padding-top: 50px;
-  text-align: center;
-  justify-content: center;
   width: 100%;
-  max-width: 100%;
-  height: 100%;
+  margin: 0;
+  padding: 50px 0 10px 0;
+  text-align: center;
   background-image: $background-image;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 10px;
 }
 
 .hijoMainSemantico {
+  width: 90%;
   margin: 0 auto;
-  padding: $padding-xl;
-  max-width: 100%;
-  justify-content: center;
-  text-align: center;
+  padding: 2rem;
   background-color: $color-hijo-main-semantico;
   border-radius: $border-radius-xl;
-  width: 80%;
-  height: 100%;
+  box-sizing: border-box;
 }
+
 ul {
   color: $color-principal;
   font-family: $font-monospace;
   list-style: none;
   font-size: $font-size-base;
 }
+
 form {
-  padding-top: 10px;
+  padding: 1rem;
   border-radius: $border-radius-xl;
   background-color: $color-form-bg;
-  margin-left: 20%;
-  margin-right: 20%;
-  height: 90px;
+  width: 60%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
 p {
   color: aliceblue;
 }
+
 li {
   color: $color-secundario;
 }
-// Media queries Estructurado Semantico
+
+.ejemplo-html {
+  code {
+    font-size: 24px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+}
+
+// Media queries
 @include tablet {
   .headerSemantico {
     text-align: center;
+
     img {
       width: 100%;
-      margin-top: 50px;
+      margin: 50px 0 0 0;
     }
   }
-  main.mainSemantico {
+
+  .mainSemantico {
     background-color: $color-main-semantico-alt;
+    padding: 1rem;
   }
+
   .hijoMainSemantico {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    max-width: 100%;
+    padding: 1rem;
     background-color: $color-main-semantico-alt;
     border-radius: 0;
+
+    p {
+      padding: $padding-titulos-p;
+      font-size: 28px !important;
+    }
+  }
+
+  form {
+    width: 90%;
   }
 }
+
 @include mobile {
   .headerSemantico {
     text-align: center;
+
     img {
       width: 100%;
-      margin-top: 50px;
+      margin: 50px 0 0 0;
     }
   }
+
   .mainSemantico {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
   }
+
   .hijoMainSemantico {
-    margin: 0;
     width: 100%;
-    max-width: 100%;
+    padding: 1rem;
     background-color: $color-main-semantico-alt;
     border-radius: 0;
+
+    #contacto {
+      form {
+        width: 100%;
+        overflow: hidden;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  form {
+    width: 100%;
   }
 }

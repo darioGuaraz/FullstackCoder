@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Bitcount+Prop+Single:wght@100..900&family=Cinzel:wght@400..900&family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wdth,wght@0,5..1200,112.5,300..900;1,5..1200,112.5,300..900&display=swap");
 
 a,
-h3,
-p {
+h3 {
   font-family: Handjet !important;
   font-size: 24px !important;
   font-weight: 500 !important;
@@ -13,7 +12,12 @@ h1 {
   font-family: Anton SC;
   font-weight: 400;
   font-style: normal !important;
+  text-shadow: 14px 14px 8px rgba(0, 0, 0, 0.5);
 
   font-style: normal;
   font-size: 50px !important;
+}
+
+p {
+  font-family: inter;
 }
