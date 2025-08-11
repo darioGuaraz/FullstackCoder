@@ -37,7 +37,7 @@ p {
 }
 
 body {
-  background-image: url("/FullstackCoder/img/fondo2.avif");
+  background-image: url("/img/fondo2.avif");
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -303,7 +303,7 @@ iframe:hover {
 }
 .headerSemantico {
   width: 100%;
-  background-image: url("/FullstackCoder/img/header-semantico.jpg");
+  background-image: url("/img/header-semantico.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -319,7 +319,7 @@ iframe:hover {
   margin: 0;
   padding: 50px 0 10px 0;
   text-align: center;
-  background-image: url("/FullstackCoder/img/fondo2.avif");
+  background-image: url("/img/fondo2.avif");
   background-repeat: no-repeat;
   background-size: cover;
 }
